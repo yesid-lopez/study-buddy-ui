@@ -25,7 +25,7 @@ const config: Config = {
       "violet-light": "#EAE4F6",
       violet: "#B69EEA",
       "violet-dark": "#8C80FF",
-      "violet-darker": "#27154E",
+      "violet-darker": "#160B2D",
     },
   },
   plugins: [],
