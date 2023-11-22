@@ -24,7 +24,11 @@ const page = () => {
           className="bg-gray h-10 rounded-xl w-80 p-4 focus:outline-green"
           placeholder="Lorem, ipsum."
         />
-        <button title="button" type="button" className="bg-violet-darker">
+        <button
+          title="button"
+          type="button"
+          className="bg-violet-darker text-white p-4 w-fit rounded-xl"
+        >
           Button
         </button>
       </div>

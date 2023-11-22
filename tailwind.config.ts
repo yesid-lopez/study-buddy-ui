@@ -9,6 +9,7 @@ const config: Config = {
 
   theme: {
     colors: {
+      white: "#FFFFFF",
       gray: "#F1F1F1",
       "orange-light": "#FFD5AE",
       orange: "#FFB15D",
@@ -25,7 +26,7 @@ const config: Config = {
       "violet-light": "#EAE4F6",
       violet: "#B69EEA",
       "violet-dark": "#8C80FF",
-      "violet-darker": "#160833",
+      "violet-darker": "#12094B",
     },
   },
   plugins: [],
