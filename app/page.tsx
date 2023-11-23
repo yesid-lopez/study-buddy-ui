@@ -27,10 +27,80 @@ const page = () => {
         <button
           title="button"
           type="button"
-          className="bg-violet-darker text-white p-4 w-fit rounded-xl"
+          className="bg-violet-darker text-white px-6 py-4 w-fit font-semibold rounded-xl hover:bg-opacity-90 active:bg-violet-darker "
         >
           Button
         </button>
+        <div className="p-4 shadow bg-orange-light rounded-xl text-orange-darker">
+          <strong>Lorem ipsum dolor sit amet.</strong>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            quisquam tenetur similique placeat enim dicta inventore non sunt?
+            Fugit, a!
+          </p>
+          <button
+            type="button"
+            className="bg-orange px-4 py-2 rounded-xl hover:bg-opacity-90 active:bg-orange"
+          >
+            <strong>Lorem ipsum</strong>
+          </button>
+        </div>
+        <div className="p-4 shadow bg-blue-light rounded-xl text-blue-darker">
+          <strong>Lorem ipsum dolor sit amet.</strong>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            quisquam tenetur similique placeat enim dicta inventore non sunt?
+            Fugit, a!
+          </p>
+          <button
+            type="button"
+            className="bg-blue px-4 py-2 rounded-xl hover:bg-opacity-90 active:bg-blue"
+          >
+            <strong>Lorem ipsum</strong>
+          </button>
+        </div>
+        <div className="p-4 shadow bg-red-light rounded-xl text-red-darker">
+          <strong>Lorem ipsum dolor sit amet.</strong>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            quisquam tenetur similique placeat enim dicta inventore non sunt?
+            Fugit, a!
+          </p>
+          <button
+            type="button"
+            className="bg-red px-4 py-2 rounded-xl hover:bg-opacity-90 active:bg-red"
+          >
+            <strong>Lorem ipsum</strong>
+          </button>
+        </div>
+        <div className="p-4 shadow bg-green-light rounded-xl text-green-darker">
+          <strong>Lorem ipsum dolor sit amet.</strong>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            quisquam tenetur similique placeat enim dicta inventore non sunt?
+            Fugit, a!
+          </p>
+          <button
+            type="button"
+            className="bg-green px-4 py-2 rounded-xl hover:bg-opacity-90 active:bg-green"
+          >
+            <strong>Lorem ipsum</strong>
+          </button>
+        </div>
+        <div className="p-4 shadow bg-violet-light rounded-xl text-violet-darker">
+          <strong>Lorem ipsum dolor sit amet.</strong>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+            quisquam tenetur similique placeat enim dicta inventore non sunt?
+            Fugit, a!
+          </p>
+          <button
+            type="button"
+            className="bg-violet px-4 py-2 rounded-xl hover:bg-opacity-90 active:bg-violet"
+          >
+            <strong>Lorem ipsum</strong>
+          </button>
+        </div>
       </div>
     </>
   );
