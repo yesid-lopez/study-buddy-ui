@@ -1,49 +1,23 @@
-"use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
-import ExpandIcon from "../Icons/ExpandIcon.tsx/ExpandIcon";
-import UserIcon from "../Icons/UserIcon/UserIcon";
+import React from "react";
 import HomeIcon from "../Icons/HomeIcon/HomeIcon";
 import SettingsIcon from "../Icons/SettingsIcon/SettingsIcon";
+import NavItem from "./NavItem";
+import PlusIcon from "../Icons/PlusIcon/PlusIcon";
 
 const Navigation = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
-  console.log(isOpen);
-
-  const toggleNavigation = () => {
-    setIsOpen(!isOpen);
-  };
-
   return (
     <>
-      <motion.aside
-        animate={isOpen ? "open" : "closed"}
-        className={`flex flex-col gap-4 border border-gray md:h-screen top-0 p-2 ${
-          isOpen ? "w-64" : "w-16"
-        }}`}
+      <aside
+        className={`flex md:flex-col w-full md:w-fit justify-between items sticky border border-gray md:h-screen top-0 p-2 rounded-r-xl`}
       >
-        <div className="border-b border-gray">
-          <div className="p-2">
-            <UserIcon />
-          </div>
-          <button
-            title="Expand Navigation"
-            type="button"
-            onClick={toggleNavigation}
-            className={"p-2 hover:bg-gray"}
-          >
-            <ExpandIcon />
-          </button>
+        <div className="flex md:flex-col items-start gap-4">
+          <NavItem item="Home" icon={<HomeIcon />} />
+          <NavItem item="Settings" icon={<SettingsIcon />} />
         </div>
         <div>
-          <button title="Home" type="button" className="p-2">
-            <HomeIcon />
-          </button>
-          <button title="Settings" type="button" className="p-2">
-            <SettingsIcon />
-          </button>
+          <NavItem item={"Create"} icon={<PlusIcon />} />
         </div>
-      </motion.aside>
+      </aside>
     </>
   );
 };
