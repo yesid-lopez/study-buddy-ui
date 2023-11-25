@@ -12,14 +12,7 @@ const HomePage = () => {
         laborum totam, optio ab aliquid fuga corrupti aperiam repellat, modi ad
         maxime amet dolor reprehenderit iste. Laborum nobis ab tempore dolores.
       </p>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 w-full mt-6 h-fit">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 w-full mt-6 h-fit"></div>
     </section>
   );
 };

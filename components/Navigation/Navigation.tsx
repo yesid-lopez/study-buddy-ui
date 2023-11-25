@@ -1,10 +1,18 @@
+"use client";
 import React from "react";
 import HomeIcon from "../Icons/HomeIcon/HomeIcon";
 import SettingsIcon from "../Icons/SettingsIcon/SettingsIcon";
 import NavItem from "./NavItem";
 import PlusIcon from "../Icons/PlusIcon/PlusIcon";
+import useStore from "@/state/store/store";
+import NewCourseModal from "../NewCourseModal/NewCourseModal";
 
 const Navigation = () => {
+  const { isModalOpen, openModal } = useStore((state) => ({
+    isModalOpen: state.isModalOpen,
+    openModal: state.openModal,
+  }));
+
   return (
     <>
       <aside
@@ -15,9 +23,10 @@ const Navigation = () => {
           <NavItem item="Settings" icon={<SettingsIcon />} />
         </div>
         <div>
-          <NavItem item={"Create"} icon={<PlusIcon />} />
+          <NavItem item={"Create"} icon={<PlusIcon />} onClick={openModal} />
         </div>
       </aside>
+      {isModalOpen && <NewCourseModal />}
     </>
   );
 };
