@@ -8,7 +8,7 @@ const Navigation = () => {
   return (
     <>
       <aside
-        className={`flex md:flex-col w-full md:w-fit justify-between items sticky border border-gray md:h-screen top-0 p-2 rounded-r-xl`}
+        className={`flex shadow md:flex-col w-full md:w-fit justify-between items sticky md:h-screen top-0 p-2`}
       >
         <div className="flex md:flex-col items-start gap-4">
           <NavItem item="Home" icon={<HomeIcon />} />
